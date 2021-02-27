@@ -8,7 +8,7 @@ const Navbar = () =>{
         <>
 <div className="container-fluid nav_bg">
     <div className='row'>
-        <div className="col-10 mx-auto ">
+        <div className="col-xl-12 col-lg-12 col-md-12 col-10 mx-auto ">
             <nav className="navbar   navbar-expand-lg  navbar-light  navcolor" >
                 <div className="container-fluid">
                     <NavLink className="navbar-brand" to="/">Parking App
@@ -36,6 +36,9 @@ const Navbar = () =>{
                             </li>
                             <li className="nav-item">
                                 <NavLink  exact activeClassName="menu_active"  className="nav-link active" aria-current="page" to="/service">Service</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink  exact activeClassName="menu_active"  className="nav-link active" aria-current="page" to="/signup">Register</NavLink>
                             </li>
                         </ul>
                     </div>

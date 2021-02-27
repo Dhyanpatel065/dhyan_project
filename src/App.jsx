@@ -5,24 +5,29 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Service from "./Service";
+import Signup from "./Signup";
+import Signin from "./Signin";
 import Navbar from "./Navbar"
-import { Switch , Route, Redirect} from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 const App = () => {
-  return(
-  <>
-    <Navbar/>
-    <Switch>
-      <Route exact path = "/"  component={Home} />
-      <Route exact path = "/about"  component={About} />
-      <Route exact path = "/contact"  component={Contact} />
-      <Route exact path = "/service"  component={Service} />
-      <Redirect to="/"/>
-      <Home/>
-    </Switch>  
-  </>
+  return (
+    <>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/service" component={Service} />
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/signin" component={Signin} />
+
+        <Redirect to="/" />
+        <Home />
+      </Switch>
+    </>
   );
-} ;
+};
 
 
 export default App;
